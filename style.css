@@ -1,0 +1,106 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: #333;
+    background-color: #fafafa;
+}
+
+/* Encabezado y pie de página */
+header,
+footer {
+    background-color: #e3f2fd;
+    padding: 15px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+/* Navegación */
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: #1565c0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+caption {
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+th,
+td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #e3f2fd;
+}
+
+/* Filas alternadas y efecto al pasar el mouse */
+tbody tr:nth-child(even) {
+    background-color: #f5f9ff;
+}
+
+tbody tr:hover {
+    background-color: #d6eaff;
+}
+
+/* Sección Acerca de */
+.acerca {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #fff;
+    border-left: 4px solid #1565c0;
+}
+
+/* Formulario */
+.formulario label,
+.formulario input,
+.formulario button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    th, td {
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    .formulario input,
+    .formulario button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
